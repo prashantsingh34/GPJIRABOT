@@ -1,27 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>GPJIRABOT Support</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GPJIRABOT — Support</title>
+<style>
+:root{--bg:#f7fbff;--card:#ffffff;--accent:#0366d6;--muted:#6b7280;--maxw:900px}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:#111;margin:0;padding:32px;display:flex;justify-content:center}
+.wrap{max-width:var(--maxw);width:100%}
+.card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+h1,h2{color:#0f172a;margin-top:0}
+p,li{color:var(--muted);line-height:1.6}
+ul{color:var(--muted);padding-left:20px}
+a{color:var(--accent);text-decoration:none}
+footer{margin-top:18px;font-size:13px;color:var(--muted)}
+@media (prefers-color-scheme:dark){:root{--bg:#071024;--card:#071428;--accent:#58a6ff;--muted:#9aa6bf} body{color:#e6eef8}}
+</style>
 </head>
 <body>
-  <h1>Support – GPJIRABOT</h1>
+<div class="wrap">
+<div class="card">
+<h1 style="color: white;">Support</h1>
+<div class="grid">
+<div>
+<p class="contact">If you need help with GPJIRABOT — installation, permissions, or bug reports — please contact us using the form or the email address on the right.</p>
 
-  <p>If you need any help using GPJIRABOT, you can reach us through the following:</p>
 
-  <h2>Contact Support</h2>
-  <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+<h3>Common issues</h3>
+<ul class="contact">
+<li>App not visible in Marketplace — ensure you published and set visibility to Public in Google Cloud project.</li>
+<li>OAuth consent issues — check your OAuth scopes and test with a domain-admin account.</li>
+<li>Bot not responding in Chat — check message handling and Bot permissions.</li>
+</ul>
 
-  <h2>Common Issues</h2>
-  <ul>
-    <li>Bot not responding in Google Chat™</li>
-    <li>Error while creating or updating Jira issues</li>
-    <li>Authentication or permission errors</li>
-  </ul>
 
-  <p>We usually respond within 24–48 hours.</p>
+<h3>Report a bug</h3>
+<p class="contact">Please include: steps to reproduce, expected behavior, screenshots, and the request IDs (if available).</p>
+</div>
 
-  <footer>
-    <p>Google Chat™ is a trademark of Google LLC.</p>
-  </footer>
+
+<aside>
+<div style="background:#142941;padding:14px;border-radius:8px">
+<p style="margin:0 0 8px 0"><strong>Contact us</strong></p>
+<!-- <p style="margin:0.2em 0;color:var(--muted)"><strong>Internal Developer Docs:</strong> <a href="https://your-internal-docs.example">Open Developer Page</a></p> -->
+<p style="margin:0.2em 0;color:var(--muted)"><strong>Support Email:</strong> <a href="mailto:kdalvi@tsys.com">kdalvi@tsys.com</a></p>
+<!-- <div style="margin-top:10px"><a class="btn" href="https://your-internal-docs.example">Open Docs</a></div> -->
+</div>
+
+
+<div style="margin-top:12px;font-size:13px;color:var(--muted)">
+<p style="margin:0 0 6px 0"><strong>Support scope</strong></p>
+<p style="margin:0">Support is provided internally by our  organization’s SRE team.</p></strong></p>
+<p style="margin:0">Mon–Fri, 9:30–18:00 CST</p>
+</div>
+</aside>
+</div>
+
+
+<footer style="margin-top:14px;font-size:13px;color:var(--muted)">Google Chat™ is a trademark of Google LLC.</footer>
+</div>
+</div>
+<!-- <div style="text-align:center;margin-top:20px;font-size:13px;color:#6b7280">Google Chat™ is a trademark of Google LLC.</div> -->
 </body>
 </html>
